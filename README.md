@@ -1,6 +1,6 @@
 # Yunhao Feng · Academic Homepage
 
-A responsive, bilingual academic homepage for [yunhao-feng.github.io](https://yunhao-feng.github.io/), with a layout inspired by [Ziyang Chen’s homepage](https://czy1999.github.io/).
+A responsive, bilingual academic homepage for [yunhao-feng.github.io](https://yunhao-feng.github.io/), with a layout inspired by [Ziyang Chen’s homepage](https://czy1999.github.io/). The design uses a compact profile sidebar, readable body text, and conventional publication entries with bracketed resource links.
 
 ## Preview
 
@@ -24,7 +24,7 @@ Then open `http://127.0.0.1:8765/`.
 
 Only publications with a `selected_order` appear on the homepage. The selected order is SkillTrojan, AgentHazard, BackdoorAgent, JAIL, and PaperAsk. Other entries remain in the data file.
 
-After editing publication data, regenerate the static HTML:
+After editing publication data, CSS, or JavaScript, regenerate the static HTML:
 
 ```sh
 python scripts/render_publications.py
@@ -32,7 +32,7 @@ python scripts/render_publications.py --check
 node --check script.js
 ```
 
-Generated articles are between the `PUBLICATIONS:START` / `PUBLICATIONS:END` comments. Edit their JSON source instead of the generated HTML. All primary content is available without JavaScript.
+Generated articles are between the `PUBLICATIONS:START` / `PUBLICATIONS:END` comments. Edit their JSON source instead of the generated HTML. All primary content is available without JavaScript. The renderer also adds content-based version parameters to CSS and JavaScript URLs to prevent stale browser assets after a deployment.
 
 The existing scheduled Scholar workflow refreshes citation metadata and renders the curated selection. It preserves manually curated venues, years, links, and order; newly discovered papers are not automatically selected.
 

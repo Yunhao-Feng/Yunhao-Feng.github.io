@@ -18,8 +18,10 @@ jobs:
           python-version: "3.x"
       - name: Refresh publications from Google Scholar
         run: python scripts/update_publications.py
+      - name: Render selected publications and version assets
+        run: python scripts/render_publications.py
       - name: Commit publication updates
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update publications from Google Scholar"
-          file_pattern: data/publications.json
+          file_pattern: data/publications.json index.html

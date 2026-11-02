@@ -13,8 +13,8 @@
   <meta property="og:image" content="https://yunhao-feng.github.io/resume/Photo.png" />
   <link rel="canonical" href="https://yunhao-feng.github.io/" />
   <link rel="icon" href="head.jpg" />
-  <link rel="stylesheet" href="styles.css" />
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=6a57c342f96a" />
+  <script src="script.js?v=d4cd119d753a" defer></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main-content" data-i18n="skip">Skip to content</a>
@@ -29,10 +29,7 @@
     <div class="masthead-inner">
       <a class="brand" href="#top">Yunhao Feng</a>
       <nav class="navigation" aria-label="Main navigation">
-        <a href="#about" data-i18n="navAbout">About</a>
-        <a href="#publications" data-i18n="navPapers">Publications</a>
-        <a href="#experience" data-i18n="navExperience">Experience</a>
-        <a href="#service" data-i18n="navService">Service</a>
+        <a href="#about" data-i18n="navAbout">Homepage</a>
       </nav>
       <button id="langToggle" class="language-button" type="button" aria-label="切换到中文" hidden>中文</button>
     </div>
@@ -51,19 +48,19 @@
         <li><svg class="icon" aria-hidden="true"><use href="#icon-school"/></svg><a href="https://scholar.google.com/citations?user=7xD7XIUAAAAJ&amp;hl=en">Google Scholar</a></li>
         <li><svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg><a href="https://github.com/Yunhao-Feng">GitHub</a></li>
       </ul>
-      <div class="profile-note"><span class="status-dot" aria-hidden="true"></span><span data-i18n="profileNote">Open to research collaboration</span></div>
     </aside>
     <main id="main-content" class="main-content">
       <section id="about" class="section" aria-labelledby="about-heading">
         <h2 id="about-heading"><span class="section-emoji" aria-hidden="true">😎</span><span data-i18n="aboutTitle">About Me <span class="heading-aside">(冯云浩)</span></span></h2>
         <p data-i18n="bio">I am a Ph.D. student at the <a href="https://english.nudt.edu.cn/">National University of Defense Technology (NUDT)</a>, advised by Prof. <strong>Yanming Guo (郭延明)</strong>. I was a visiting student at <a href="https://www.fudan.edu.cn/en/">Fudan University</a> from May to December 2025. I am currently an algorithm engineer intern at <a href="https://www.antgroup.com/en">Ant Group</a>, working on LLM and agent safety.</p>
-        <p data-i18n="researchGoal">My research aims to make AI agents <strong>safe, reliable, and controllable</strong> in real-world environments. I study how risks emerge across an agent’s reasoning and actions, and how evaluation, runtime safeguards, and post-training can improve its behavior. My interests include:</p>
+        <p data-i18n="researchGoal">My long-term goal is to build <strong>safe, reliable, and controllable AI agents</strong> for real-world environments. My current research focuses on:</p>
         <ul class="research-interests">
-          <li data-i18n="interest1"><strong>LLM &amp; Agent Safety:</strong> backdoor attacks, prompt injection, and automated red teaming;</li>
-          <li data-i18n="interest2"><strong>Safety Post-Training:</strong> guard models, reinforcement learning, and process supervision;</li>
-          <li data-i18n="interest3"><strong>Trustworthy Agent Evaluation:</strong> computer-use agents, coding agents, and scholarly assistants.</li>
+          <li data-i18n="interest1">LLM and agent safety, backdoor attacks, and automated red teaming;</li>
+          <li data-i18n="interest2">Safety post-training, guard models, and reinforcement learning;</li>
+          <li data-i18n="interest3">Reliability evaluation of computer-use, coding, and research agents.</li>
         </ul>
-        <p class="collaboration" data-i18n="collaboration">I welcome research collaborations on trustworthy LLMs and AI agents. Feel free to <a href="mailto:Alctrain@163.com">get in touch</a>!</p>
+        <p class="collaboration" data-i18n="collaboration">I am actively looking for academic collaboration on trustworthy LLMs and AI agents.</p>
+        <p class="contact-line">📧 <a href="mailto:Alctrain@163.com">Alctrain@163.com</a></p>
       </section>
       <section id="news" class="section" aria-labelledby="news-heading">
         <h2 id="news-heading"><span class="section-emoji" aria-hidden="true">🔥</span><span data-i18n="newsTitle">News</span></h2>
@@ -82,54 +79,44 @@
         <div id="publicationList" class="publication-list">
 <!-- PUBLICATIONS:START -->
           <article class="publication" id="skilltrojan" aria-labelledby="skilltrojan-title">
-            <span class="pub-venue">ICML 2026</span>
-            <h3 class="pub-title" id="skilltrojan-title"><a href="https://arxiv.org/abs/2604.06811">SkillTrojan: Backdoor Attacks on Skill-Based Agent Systems</a></h3>
+            <h3 class="pub-title" id="skilltrojan-title"><span class="pub-venue">[ICML 2026]</span> <a href="https://arxiv.org/abs/2604.06811">SkillTrojan: Backdoor Attacks on Skill-Based Agent Systems</a></h3>
             <p class="pub-authors"><strong>Yunhao Feng</strong>, Yifan Ding, Yingshui Tan, Boren Zheng, Yanming Guo, Xiaolong Li, Kun Zhai, Yishan Li, Wenke Huang</p>
-            <p class="pub-summary" data-zh="揭示大模型智能体中由技能组合与触发机制引入的新型后门风险。">Revealing skill-level backdoor threats in LLM agents through trigger-activated, compositional execution.</p>
             <div class="pub-links">
-              <a href="https://arxiv.org/abs/2604.06811" aria-label="Paper: SkillTrojan: Backdoor Attacks on Skill-Based Agent Systems">Paper</a>
-              <a href="https://github.com/Yunhao-Feng/SkillTrojan" aria-label="Code: SkillTrojan: Backdoor Attacks on Skill-Based Agent Systems">Code</a>
+              <span class="resource-link">[<a href="https://arxiv.org/abs/2604.06811" aria-label="Paper: SkillTrojan: Backdoor Attacks on Skill-Based Agent Systems">Paper</a>]</span>
+              <span class="resource-link">[<a href="https://github.com/Yunhao-Feng/SkillTrojan" aria-label="Code: SkillTrojan: Backdoor Attacks on Skill-Based Agent Systems">Code</a>]</span>
             </div>
           </article>
           <article class="publication" id="agenthazard" aria-labelledby="agenthazard-title">
-            <span class="pub-venue">ACM Multimedia 2026</span>
-            <h3 class="pub-title" id="agenthazard-title"><a href="https://arxiv.org/abs/2604.02947">AgentHazard: A Benchmark for Evaluating Harmful Behavior in Computer-Use Agents</a></h3>
+            <h3 class="pub-title" id="agenthazard-title"><span class="pub-venue">[ACM Multimedia 2026]</span> <a href="https://arxiv.org/abs/2604.02947">AgentHazard: A Benchmark for Evaluating Harmful Behavior in Computer-Use Agents</a></h3>
             <p class="pub-authors"><strong>Yunhao Feng</strong>, Yifan Ding, Yingshui Tan, Xingjun Ma, Yige Li, Yutao Wu, Yifeng Gao, Kun Zhai, Yanming Guo</p>
-            <p class="pub-summary" data-zh="构建包含 2,653 条实例的评测基准，研究智能体多步执行过程中逐渐形成的有害行为。">A benchmark of 2,653 instances for evaluating harmful behavior that emerges across multi-step agent workflows.</p>
             <div class="pub-links">
-              <a href="https://arxiv.org/abs/2604.02947" aria-label="Paper: AgentHazard: A Benchmark for Evaluating Harmful Behavior in Computer-Use Agents">Paper</a>
-              <a href="https://github.com/Yunhao-Feng/AgentHazard" aria-label="Code: AgentHazard: A Benchmark for Evaluating Harmful Behavior in Computer-Use Agents">Code</a>
-              <a href="https://huggingface.co/datasets/Yunhao-Feng/AgentHazard" aria-label="Data: AgentHazard: A Benchmark for Evaluating Harmful Behavior in Computer-Use Agents">Data</a>
-              <a href="https://yunhao-feng.github.io/AgentHazard/" aria-label="Project: AgentHazard: A Benchmark for Evaluating Harmful Behavior in Computer-Use Agents">Project</a>
+              <span class="resource-link">[<a href="https://arxiv.org/abs/2604.02947" aria-label="Paper: AgentHazard: A Benchmark for Evaluating Harmful Behavior in Computer-Use Agents">Paper</a>]</span>
+              <span class="resource-link">[<a href="https://github.com/Yunhao-Feng/AgentHazard" aria-label="Code: AgentHazard: A Benchmark for Evaluating Harmful Behavior in Computer-Use Agents">Code</a>]</span>
+              <span class="resource-link">[<a href="https://huggingface.co/datasets/Yunhao-Feng/AgentHazard" aria-label="Data: AgentHazard: A Benchmark for Evaluating Harmful Behavior in Computer-Use Agents">Data</a>]</span>
+              <span class="resource-link">[<a href="https://yunhao-feng.github.io/AgentHazard/" aria-label="Project: AgentHazard: A Benchmark for Evaluating Harmful Behavior in Computer-Use Agents">Project</a>]</span>
             </div>
           </article>
           <article class="publication" id="backdooragent" aria-labelledby="backdooragent-title">
-            <span class="pub-venue">Findings of ACL 2026</span>
-            <h3 class="pub-title" id="backdooragent-title"><a href="https://aclanthology.org/2026.findings-acl.791/">BackdoorAgent: A Unified Framework for Backdoor Attacks on LLM-based Agents</a></h3>
+            <h3 class="pub-title" id="backdooragent-title"><span class="pub-venue">[Findings of ACL 2026]</span> <a href="https://aclanthology.org/2026.findings-acl.791/">BackdoorAgent: A Unified Framework for Backdoor Attacks on LLM-based Agents</a></h3>
             <p class="pub-authors"><strong>Yunhao Feng</strong>, Yige Li, Yutao Wu, Yingshui Tan, Yanming Guo, Yifan Ding, Kun Zhai, Xingjun Ma, Yu-Gang Jiang</p>
-            <p class="pub-summary" data-zh="统一分析智能体后门威胁，研究触发器在规划、记忆与工具调用阶段的激活和传播。">A unified framework for understanding how backdoor triggers propagate through planning, memory, and tool use.</p>
             <div class="pub-links">
-              <a href="https://aclanthology.org/2026.findings-acl.791/" aria-label="Paper: BackdoorAgent: A Unified Framework for Backdoor Attacks on LLM-based Agents">Paper</a>
-              <a href="https://github.com/Yunhao-Feng/BackdoorAgent" aria-label="Code: BackdoorAgent: A Unified Framework for Backdoor Attacks on LLM-based Agents">Code</a>
+              <span class="resource-link">[<a href="https://aclanthology.org/2026.findings-acl.791/" aria-label="Paper: BackdoorAgent: A Unified Framework for Backdoor Attacks on LLM-based Agents">Paper</a>]</span>
+              <span class="resource-link">[<a href="https://github.com/Yunhao-Feng/BackdoorAgent" aria-label="Code: BackdoorAgent: A Unified Framework for Backdoor Attacks on LLM-based Agents">Code</a>]</span>
             </div>
           </article>
           <article class="publication" id="jail" aria-labelledby="jail-title">
-            <span class="pub-venue">Expert Systems with Applications · Accepted 2026</span>
-            <h3 class="pub-title" id="jail-title"><a href="https://doi.org/10.1016/j.eswa.2026.133684">JAIL: Adaptive Multi-Turn Jailbreak Attacks Reveal Limitations of LLM Safety Alignment</a></h3>
+            <h3 class="pub-title" id="jail-title"><span class="pub-venue">[Expert Systems with Applications · Accepted 2026]</span> <a href="https://doi.org/10.1016/j.eswa.2026.133684">JAIL: Adaptive Multi-Turn Jailbreak Attacks Reveal Limitations of LLM Safety Alignment</a></h3>
             <p class="pub-authors"><strong>Yunhao Feng</strong>, Mingrui Lao, Jun Wang, Yishan Li, Xiaolong Li, Yuxiang Xie, Yanming Guo</p>
-            <p class="pub-summary" data-zh="通过自适应多轮越狱评测，研究大模型安全对齐在持续交互中的局限性。">Adaptive multi-turn jailbreak evaluation that examines the limitations of LLM safety alignment.</p>
             <div class="pub-links">
-              <a href="https://doi.org/10.1016/j.eswa.2026.133684" aria-label="Paper: JAIL: Adaptive Multi-Turn Jailbreak Attacks Reveal Limitations of LLM Safety Alignment">Paper</a>
+              <span class="resource-link">[<a href="https://doi.org/10.1016/j.eswa.2026.133684" aria-label="Paper: JAIL: Adaptive Multi-Turn Jailbreak Attacks Reveal Limitations of LLM Safety Alignment">Paper</a>]</span>
             </div>
           </article>
           <article class="publication" id="paperask" aria-labelledby="paperask-title">
-            <span class="pub-venue">The Web Conference (WWW) 2026</span>
-            <h3 class="pub-title" id="paperask-title"><a href="https://arxiv.org/abs/2510.22242">PaperAsk: A Benchmark for Reliability Evaluation of LLMs in Paper Search and Reading</a></h3>
+            <h3 class="pub-title" id="paperask-title"><span class="pub-venue">[The Web Conference (WWW) 2026]</span> <a href="https://arxiv.org/abs/2510.22242">PaperAsk: A Benchmark for Reliability Evaluation of LLMs in Paper Search and Reading</a></h3>
             <p class="pub-authors">Yutao Wu, Xiao Liu, <strong>Yunhao Feng</strong>, Jiale Ding, Xingjun Ma</p>
-            <p class="pub-summary" data-zh="围绕引文检索、内容提取、论文发现与论断验证四类任务，评估大模型科研助手的可靠性。">Evaluating the reliability of LLM research assistants in citation retrieval, content extraction, paper discovery, and claim verification.</p>
             <div class="pub-links">
-              <a href="https://arxiv.org/abs/2510.22242" aria-label="Paper: PaperAsk: A Benchmark for Reliability Evaluation of LLMs in Paper Search and Reading">Paper</a>
-              <a href="https://github.com/wuyoscar/PaperAsk/tree/main/test_cases" aria-label="Data: PaperAsk: A Benchmark for Reliability Evaluation of LLMs in Paper Search and Reading">Data</a>
+              <span class="resource-link">[<a href="https://arxiv.org/abs/2510.22242" aria-label="Paper: PaperAsk: A Benchmark for Reliability Evaluation of LLMs in Paper Search and Reading">Paper</a>]</span>
+              <span class="resource-link">[<a href="https://github.com/wuyoscar/PaperAsk/tree/main/test_cases" aria-label="Data: PaperAsk: A Benchmark for Reliability Evaluation of LLMs in Paper Search and Reading">Data</a>]</span>
             </div>
           </article>
 <!-- PUBLICATIONS:END -->
@@ -185,9 +172,9 @@
       <section id="awards" class="section" aria-labelledby="awards-heading">
         <h2 id="awards-heading"><span class="section-emoji" aria-hidden="true">🏅</span><span data-i18n="awardsTitle">Awards &amp; Honors</span></h2>
         <ul class="awards-list">
-          <li><span class="award-icon" aria-hidden="true">☁️</span><span data-i18n="awardQingyun"><strong>Tencent Qingyun Program</strong> <span class="muted">(腾讯青云计划)</span></span></li>
-          <li><span class="award-icon" aria-hidden="true">🌟</span><span data-i18n="awardKstar"><strong>Kuaishou KStar Program</strong> <span class="muted">(快手 KStar 计划)</span></span></li>
-          <li><span class="award-icon" aria-hidden="true">🏆</span><span data-i18n="awardHuawei"><strong>National Champion, LLM Security Track</strong><br /><span class="muted">Huawei Cup · 6th China Graduate AI Innovation Competition, 2024<br />2024 年“华为杯”中国研究生人工智能创新大赛（大模型安全赛道）全国冠军</span></span></li>
+          <li data-i18n="awardQingyun">Tencent Qingyun Program (腾讯青云计划)</li>
+          <li data-i18n="awardKstar">Kuaishou KStar Program (快手 KStar 计划)</li>
+          <li data-i18n="awardHuawei"><strong>National Champion</strong>, LLM Security Track, Huawei Cup · 6th China Graduate AI Innovation Competition, 2024 <span class="muted">(“华为杯”大模型安全赛道全国冠军)</span></li>
         </ul>
       </section>
       <footer class="footer"><span>© <span id="year">2026</span> Yunhao Feng</span><a href="#top" data-i18n="backTop">Back to top ↑</a></footer>
