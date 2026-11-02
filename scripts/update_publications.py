@@ -17,7 +17,7 @@ from pathlib import Path
 
 PROFILE_USER = "7xD7XIUAAAAJ"
 PROFILE_URL = f"https://scholar.google.com/citations?user={PROFILE_USER}&hl=en&pagesize=100"
-OUT = Path("data/publications.json")
+OUT = Path(__file__).resolve().parents[1] / "data/publications.json"
 
 
 def textify(value: str) -> str:
@@ -92,7 +92,7 @@ def merge_with_existing(publications: list[dict[str, object]]) -> list[dict[str,
             continue
         scholar = by_key.get(key, {})
         item = dict(curated)
-        for field in ("citations", "year"):
+        for field in ("citations",):
             if scholar.get(field) not in (None, ""):
                 item[field] = scholar[field]
         if "scholar_url" not in item and scholar.get("url"):

@@ -1,227 +1,60 @@
-const i18n = {
-  en: {
-    navAbout: 'About',
-    navNews: 'News',
-    navPublications: 'Publications',
-    navExperience: 'Experience',
-    name: 'Yunhao Feng',
-    role: 'Ph.D. Student · Agent Safety Researcher',
-    affiliation: 'Ant Group · National University of Defense Technology',
-    statCitations: 'Citations',
-    statTopPaper: 'Top paper',
-    interestsTitle: 'Research Interests',
-    eyebrow: 'Trustworthy agents, from attacks to defenses',
-    heroTitle: 'I study how autonomous AI agents fail, and how to make them safer in real execution environments.',
-    heroCopy: 'My work focuses on computer-use and coding agents, including harmful trajectory benchmarks, skill-level backdoors, runtime monitoring, process-level verification, and training safer guard models from real interaction traces.',
-    viewPubs: 'View publications',
-    viewProjects: 'View projects',
-    impactHazard: 'AgentHazard instances for multi-step harmful behavior evaluation',
-    impactTrojan: 'SkillTrojan backdoored skills for skill-based agent security',
-    impactGuard: 'BraveGuard trajectory-level safety detection accuracy',
-    newsTitle: 'News',
-    newsHint: 'Recent updates and paper milestones.',
-    newsCitations: 'Google Scholar profile reaches 150 total citations.',
-    newsMm: 'AgentHazard is accepted to ACM Multimedia 2026.',
-    newsJail: 'JAIL is published in Expert Systems with Applications.',
-    newsBrave: 'BraveGuard and Safety in Self-Evolving LLM Agent Systems are released.',
-    newsAnt: 'Joined Ant Group as an algorithm engineer intern, focusing on agent safety.',
-    newsSkill: 'SkillTrojan is accepted to ICML 2026.',
-    newsBackdoor: 'BackdoorAgent is accepted to ACL Findings 2026.',
-    pubTitle: 'Selected Publications',
-    pubHint: 'Curated from Google Scholar and verified public records; starred venues are emphasized.',
-    citationLabel: 'citations',
-    experienceTitle: 'Experience',
-    expAnt: 'Ant Group, Department of Large Security',
-    expAntMeta: 'Algorithm Engineer Intern · Agent Safety · 2026.05 - Present',
-    expAli: 'Alibaba Future Living Lab',
-    expAliMeta: 'Algorithm Engineer Intern · Coding Agent Safety · 2025.12 - 2026.05',
-    expFudan: 'Fudan University',
-    expFudanMeta: 'Visiting Student · 2025.05 - 2025.12',
-    expJd: 'JD Explore Academy',
-    expJdMeta: 'Algorithm Engineer Intern · 2022.02 - 2022.05',
-    educationTitle: 'Education',
-    eduPhd: 'National University of Defense Technology',
-    eduPhdMeta: 'Ph.D., Management Science and Engineering · 2024.03 - Present',
-    eduMaster: 'National University of Defense Technology',
-    eduMasterMeta: 'M.Eng., Electronic Information · 2022.08 - 2024.03',
-    eduBachelor: 'Southwestern University of Finance and Economics',
-    eduBachelorMeta: 'B.Sc., Information Management and Information System · 2018.09 - 2022.06',
-    serviceTitle: 'Academic Service',
-    awardsTitle: 'Awards',
-    awardHuawei: 'Champion, Huawei Cup China Graduate AI Innovation Competition, LLM Security Track',
-    awardDesign: 'Third Prize, China Graduate Electronic Design Contest',
-    awardModeling: 'Second Prize, National College Mathematical Modeling Contest',
-    reposTitle: 'Projects',
-    reposHint: 'Representative open-source projects, loaded from GitHub when available.'
-  },
-  zh: {
-    navAbout: '关于我',
-    navNews: '动态',
-    navPublications: '成果',
-    navExperience: '经历',
-    name: '冯云浩',
-    role: '博士生 · Agent 安全研究者',
-    affiliation: '蚂蚁集团 · 国防科技大学',
-    statCitations: '总引用',
-    statTopPaper: '单篇最高引用',
-    interestsTitle: '研究方向',
-    eyebrow: '从攻击到防御，研究可信 Agent',
-    heroTitle: '我关注自主 AI Agent 在真实执行环境中的失效方式，以及如何让它们更安全。',
-    heroCopy: '我的研究聚焦 computer-use 与 coding agents，覆盖有害轨迹 benchmark、skill 级后门、运行时监控、过程级验证，以及基于真实交互轨迹训练更安全的 guard model。',
-    viewPubs: '查看论文',
-    viewProjects: '查看项目',
-    impactHazard: 'AgentHazard 多步有害行为评测样例',
-    impactTrojan: 'SkillTrojan 面向 skill-based agent 的后门技能',
-    impactGuard: 'BraveGuard 轨迹级安全检测准确率',
-    newsTitle: '近期动态',
-    newsHint: '论文录用、发布与研究进展。',
-    newsCitations: 'Google Scholar 总引用达到 150。',
-    newsMm: 'AgentHazard 被 ACM Multimedia 2026 录用。',
-    newsJail: 'JAIL 发表在 Expert Systems with Applications。',
-    newsBrave: 'BraveGuard 与 Safety in Self-Evolving LLM Agent Systems 发布。',
-    newsAnt: '加入蚂蚁集团实习，研究 Agent 安全。',
-    newsSkill: 'SkillTrojan 被 ICML 2026 录用。',
-    newsBackdoor: 'BackdoorAgent 被 ACL Findings 2026 录用。',
-    pubTitle: '代表性成果',
-    pubHint: '基于 Google Scholar 与公开记录整理；重点会议和期刊会突出展示。',
-    citationLabel: '引用',
-    experienceTitle: '研究与实习经历',
-    expAnt: '蚂蚁集团大安全部',
-    expAntMeta: '算法工程师实习生 · Agent 安全 · 2026.05 - 至今',
-    expAli: '阿里巴巴未来生活实验室',
-    expAliMeta: '算法工程师实习生 · Coding Agent 安全 · 2025.12 - 2026.05',
-    expFudan: '复旦大学',
-    expFudanMeta: '访问学生 · 2025.05 - 2025.12',
-    expJd: '京东探索研究院',
-    expJdMeta: '算法工程师实习生 · 2022.02 - 2022.05',
-    educationTitle: '教育经历',
-    eduPhd: '国防科技大学',
-    eduPhdMeta: '管理科学与工程博士 · 2024.03 - 至今',
-    eduMaster: '国防科技大学',
-    eduMasterMeta: '电子信息硕士 · 2022.08 - 2024.03',
-    eduBachelor: '西南财经大学',
-    eduBachelorMeta: '信息管理与信息系统本科 · 2018.09 - 2022.06',
-    serviceTitle: '学术服务',
-    awardsTitle: '获奖情况',
-    awardHuawei: '华为杯中国研究生人工智能创新大赛大模型安全赛道全国冠军',
-    awardDesign: '中国研究生电子设计竞赛技术赛三等奖',
-    awardModeling: '全国大学生数学建模竞赛二等奖',
-    reposTitle: '开源项目',
-    reposHint: '优先展示 GitHub 上的代表性项目。'
-  }
+"use strict";
+
+// Primary content is static HTML; JavaScript only enhances the language switch.
+const translations = {
+  skip: "跳转到正文",
+  navAbout: "关于", navPapers: "论文", navExperience: "经历", navService: "学术服务",
+  profileRole: "博士研究生<br />大模型与智能体安全", profileUniversity: "国防科技大学",
+  profileNote: "欢迎学术交流与合作",
+  aboutTitle: '关于我 <span class="heading-aside">(冯云浩)</span>',
+  bio: '我是<a href="https://english.nudt.edu.cn/">国防科技大学</a>管理科学与工程专业博士研究生，导师为<strong>郭延明教授</strong>。2025 年 5 月至 12 月在<a href="https://www.fudan.edu.cn/en/">复旦大学</a>访问。目前在<a href="https://www.antgroup.com/en">蚂蚁集团</a>担任实习算法工程师，研究大模型与智能体安全。',
+  researchGoal: '我的研究致力于让真实环境中的 AI 智能体更加<strong>安全、可靠、可控</strong>。我关注风险如何在智能体的推理与执行过程中产生和传播，并结合安全评测、运行时防护与后训练改善其行为。主要研究兴趣包括：',
+  interest1: '<strong>大模型与智能体安全：</strong>后门攻击、提示注入与自动化红队；',
+  interest2: '<strong>安全后训练：</strong>检测模型、强化学习与过程监督；',
+  interest3: '<strong>可信智能体评测：</strong>计算机操作智能体、编程智能体与科研助手。',
+  collaboration: '欢迎在可信大模型与智能体方向开展学术交流与合作，欢迎<a href="mailto:Alctrain@163.com">邮件联系</a>！',
+  newsTitle: "最新动态",
+  newsNeurips: "✨ 一篇论文被 <strong>NeurIPS 2026</strong> 录用！",
+  newsMM: "✨ 一篇论文被 <strong>ACM Multimedia 2026</strong> 录用！",
+  newsICML: "✨ 两篇论文被 <strong>ICML 2026</strong> 录用！",
+  newsACL: "✨ 一篇论文被 <strong>Findings of ACL 2026</strong> 录用！",
+  pubTitle: "代表性论文", allPapers: "完整列表",
+  experienceTitle: "研究与实习经历", fudanName: "复旦大学", fudanRole: "访问学生",
+  fudanDetail: "开展智能体安全与大模型可靠性研究，关注智能体工作流中的后门威胁与评测基准构建。",
+  antName: "蚂蚁集团 · 大安全部", antDate: "2026.05 – 至今", internRole: "实习算法工程师",
+  antDetail: "开展安全数据构建，以及结合 SFT 与强化学习的检测模型后训练；围绕提示注入、越狱和工具调用风险，研究基于执行轨迹的风险判定与防护。",
+  alibabaName: "阿里巴巴集团 · 未来生活实验室",
+  alibabaDetail: "研究 Coding Agent 的安全与可靠性，分析规划、工具调用和代码执行的攻击面，探索基于执行轨迹的运行时监控、自演化防护与过程监督。",
+  jdName: "京东探索研究院",
+  jdDetail: "开发支持 TB 级表格数据的自动特征工程框架，覆盖特征预处理、生成与筛选，并集成至 OmniForce AutoML 平台。",
+  educationTitle: "教育经历", nudt: "国防科技大学", swufe: "西南财经大学",
+  phdDegree: "博士在读 · 管理科学与工程", phdDate: "2024.03 – 至今",
+  masterDegree: "硕士 · 电子信息", bachelorDegree: "本科 · 信息管理与信息系统",
+  serviceTitle: "学术服务", serviceIntro: "担任以下会议或期刊的程序委员会成员 / 审稿人：",
+  awardsTitle: "荣誉与奖励",
+  awardQingyun: '<strong>腾讯青云计划</strong> <span class="muted">(Tencent Qingyun Program)</span>',
+  awardKstar: '<strong>快手 KStar 计划</strong> <span class="muted">(Kuaishou KStar Program)</span>',
+  awardHuawei: '<strong>大模型安全赛道 · 全国冠军</strong><br /><span class="muted">2024 年“华为杯”第六届中国研究生人工智能创新大赛</span>',
+  backTop: "返回顶部 ↑"
 };
+const languageButton = document.getElementById("langToggle");
+const localizedNodes = [...document.querySelectorAll("[data-i18n], [data-zh]")];
+const englishContent = new Map(localizedNodes.map(node => [node, node.innerHTML]));
 
-let current = localStorage.getItem('homepageLanguage') || 'en';
-let cachedPublications = [];
-
-function escapeHtml(value) {
-  return String(value || '').replace(/[&<>"]/g, char => ({
-    '&': '&amp;',
-    '<': '&lt;',
-    '>': '&gt;',
-    '"': '&quot;'
-  }[char]));
-}
-
-function applyLang() {
-  document.documentElement.lang = current === 'zh' ? 'zh-CN' : 'en';
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    el.textContent = i18n[current][el.dataset.i18n] || el.textContent;
+function setLanguage(language) {
+  const chinese = language === "zh";
+  document.documentElement.lang = chinese ? "zh-CN" : "en";
+  localizedNodes.forEach(node => {
+    if (chinese && node.dataset.zh) node.textContent = node.dataset.zh;
+    else node.innerHTML = chinese ? (translations[node.dataset.i18n] ?? englishContent.get(node)) : englishContent.get(node);
   });
-  document.getElementById('langToggle').textContent = current === 'en' ? '中文' : 'EN';
-  localStorage.setItem('homepageLanguage', current);
+  languageButton.textContent = chinese ? "English" : "中文";
+  languageButton.setAttribute("aria-label", chinese ? "Switch to English" : "切换到中文");
+  try { localStorage.setItem("homepage-language", language); } catch { /* Preference storage is optional. */ }
 }
-
-function linkMarkup(links = []) {
-  return links.map(link => {
-    const label = escapeHtml(link.label);
-    const url = escapeHtml(link.url);
-    return `<a href="${url}" target="_blank" rel="noreferrer">${label}</a>`;
-  }).join('');
+if (languageButton) {
+  languageButton.hidden = false;
+  languageButton.addEventListener("click", () => setLanguage(document.documentElement.lang === "en" ? "zh" : "en"));
+  try { if (localStorage.getItem("homepage-language") === "zh") setLanguage("zh"); } catch { /* English remains readable. */ }
 }
-
-function highlightAuthors(authors) {
-  return escapeHtml(authors || '').replace(/Yunhao Feng/g, '<strong>Yunhao Feng</strong>');
-}
-
-function publicationMarkup(pub) {
-  const title = escapeHtml(pub.title);
-  const url = escapeHtml(pub.url || (pub.links && pub.links[0] && pub.links[0].url));
-  const titleMarkup = url ? `<a href="${url}" target="_blank" rel="noreferrer">${title}</a>` : title;
-  const featured = pub.featured ? ' featured' : '';
-  return `
-    <article class="publication${featured}">
-      <div class="pub-venue">${escapeHtml(pub.venue || pub.year || 'Paper')}</div>
-      <div>
-        <div class="pub-headline">
-          <h3 class="pub-title">${titleMarkup}</h3>
-          ${Number.isFinite(pub.citations) ? `<span class="citation-badge">${pub.citations} ${i18n[current].citationLabel}</span>` : ''}
-        </div>
-        ${pub.authors ? `<p class="pub-authors">${highlightAuthors(pub.authors)}</p>` : ''}
-        ${pub.highlight ? `<p class="pub-highlight">${escapeHtml(pub.highlight)}</p>` : ''}
-        ${pub.links ? `<div class="pub-links">${linkMarkup(pub.links)}</div>` : ''}
-      </div>
-    </article>`;
-}
-
-async function loadPublications() {
-  const container = document.getElementById('publicationList');
-  try {
-    const resp = await fetch('data/publications.json', { cache: 'no-store' });
-    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-    cachedPublications = await resp.json();
-    container.innerHTML = cachedPublications.map(publicationMarkup).join('');
-  } catch {
-    container.innerHTML = '<p class="loading">Failed to load publications. Please visit Google Scholar for the latest list.</p>';
-  }
-}
-
-function repoMarkup(repo) {
-  const description = repo.description || 'Research code and artifacts.';
-  return `
-    <a class="repo" href="${escapeHtml(repo.html_url)}" target="_blank" rel="noreferrer">
-      <strong>${escapeHtml(repo.name)}</strong>
-      <div>${escapeHtml(description)}</div>
-      <small>${repo.stargazers_count} stars</small>
-    </a>`;
-}
-
-async function loadRepos() {
-  const container = document.getElementById('repoList');
-  const preferred = ['BackdoorAgent', 'BraveGuard', 'AgentHazard', 'SkillTrojan'];
-  try {
-    const resp = await fetch('https://api.github.com/users/Yunhao-Feng/repos?per_page=100');
-    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-    const repos = await resp.json();
-    const selected = repos
-      .filter(repo => !repo.fork && (preferred.includes(repo.name) || repo.stargazers_count > 5))
-      .sort((a, b) => {
-        const aRank = preferred.indexOf(a.name);
-        const bRank = preferred.indexOf(b.name);
-        if (aRank !== -1 || bRank !== -1) return (aRank === -1 ? 99 : aRank) - (bRank === -1 ? 99 : bRank);
-        return b.stargazers_count - a.stargazers_count;
-      })
-      .slice(0, 6);
-    container.innerHTML = selected.map(repoMarkup).join('');
-  } catch {
-    container.innerHTML = preferred.map(name => repoMarkup({
-      name,
-      html_url: `https://github.com/Yunhao-Feng/${name}`,
-      description: 'Representative research project.',
-      stargazers_count: '-'
-    })).join('');
-  }
-}
-
-document.getElementById('langToggle').addEventListener('click', () => {
-  current = current === 'en' ? 'zh' : 'en';
-  applyLang();
-  if (cachedPublications.length) {
-    document.getElementById('publicationList').innerHTML = cachedPublications.map(publicationMarkup).join('');
-  }
-});
-
-document.getElementById('year').textContent = new Date().getFullYear();
-applyLang();
-loadPublications();
-loadRepos();
+document.getElementById("year").textContent = String(new Date().getFullYear());

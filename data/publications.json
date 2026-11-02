@@ -7,10 +7,15 @@
     "authors": "Yunhao Feng, Yanming Guo, Yinjian Hou, Yulun Wu, Mingrui Lao, Tianyuan Yu, Gang Liu",
     "highlight": "Highly cited survey on security threats in federated learning systems.",
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:u-x6o8ySG0sC",
-    "featured": true,
     "links": [
-      { "label": "Scholar", "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:u-x6o8ySG0sC" },
-      { "label": "Journal", "url": "https://link.springer.com/article/10.1007/s40747-024-01664-0" }
+      {
+        "label": "Scholar",
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:u-x6o8ySG0sC"
+      },
+      {
+        "label": "Journal",
+        "url": "https://link.springer.com/article/10.1007/s40747-024-01664-0"
+      }
     ]
   },
   {
@@ -19,46 +24,73 @@
     "year": "2026",
     "citations": 19,
     "authors": "Yunhao Feng, Yifan Ding, Yingshui Tan, Boren Zheng, Yanming Guo, Xiaolong Li, Kun Zhai, Yishan Li, Wenke Huang",
-    "highlight": "Backdoor attacks against skill-based agent systems; releases 3,000+ curated backdoored skills.",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:IjCSPb-OGe4C",
-    "featured": true,
+    "highlight": "Revealing skill-level backdoor threats in LLM agents through trigger-activated, compositional execution.",
+    "url": "https://arxiv.org/abs/2604.06811",
     "links": [
-      { "label": "Scholar", "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:IjCSPb-OGe4C" },
-      { "label": "arXiv", "url": "https://arxiv.org/abs/2604.06811" },
-      { "label": "Code", "url": "https://github.com/Yunhao-Feng/SkillTrojan" }
-    ]
+      {
+        "label": "Paper",
+        "url": "https://arxiv.org/abs/2604.06811"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/Yunhao-Feng/SkillTrojan"
+      }
+    ],
+    "id": "skilltrojan",
+    "highlight_zh": "揭示大模型智能体中由技能组合与触发机制引入的新型后门风险。",
+    "selected_order": 1
   },
   {
     "title": "AgentHazard: A Benchmark for Evaluating Harmful Behavior in Computer-Use Agents",
-    "venue": "ACM MM 2026",
+    "venue": "ACM Multimedia 2026",
     "year": "2026",
     "citations": 15,
     "authors": "Yunhao Feng, Yifan Ding, Yingshui Tan, Xingjun Ma, Yige Li, Yutao Wu, Yifeng Gao, Kun Zhai, Yanming Guo",
-    "highlight": "A 2,653-instance benchmark for harmful multi-step behavior in computer-use agents.",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:UeHWp8X0CEIC",
-    "featured": true,
+    "highlight": "A benchmark of 2,653 instances for evaluating harmful behavior that emerges across multi-step agent workflows.",
+    "url": "https://arxiv.org/abs/2604.02947",
     "links": [
-      { "label": "Scholar", "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:UeHWp8X0CEIC" },
-      { "label": "arXiv", "url": "https://arxiv.org/abs/2604.02947" },
-      { "label": "Website", "url": "https://yunhao-feng.github.io/AgentHazard/" },
-      { "label": "Code", "url": "https://github.com/Yunhao-Feng/AgentHazard" }
-    ]
+      {
+        "label": "Paper",
+        "url": "https://arxiv.org/abs/2604.02947"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/Yunhao-Feng/AgentHazard"
+      },
+      {
+        "label": "Data",
+        "url": "https://huggingface.co/datasets/Yunhao-Feng/AgentHazard"
+      },
+      {
+        "label": "Project",
+        "url": "https://yunhao-feng.github.io/AgentHazard/"
+      }
+    ],
+    "id": "agenthazard",
+    "highlight_zh": "构建包含 2,653 条实例的评测基准，研究智能体多步执行过程中逐渐形成的有害行为。",
+    "selected_order": 2
   },
   {
     "title": "BackdoorAgent: A Unified Framework for Backdoor Attacks on LLM-based Agents",
-    "venue": "ACL Findings 2026",
+    "venue": "Findings of ACL 2026",
     "year": "2026",
     "citations": 14,
     "authors": "Yunhao Feng, Yige Li, Yutao Wu, Yingshui Tan, Yanming Guo, Yifan Ding, Kun Zhai, Xingjun Ma, Yu-Gang Jiang",
-    "highlight": "A unified framework for planning, memory, and tool-use backdoor threats in LLM agents.",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:2osOgNQ5qMEC",
-    "featured": true,
+    "highlight": "A unified framework for understanding how backdoor triggers propagate through planning, memory, and tool use.",
+    "url": "https://aclanthology.org/2026.findings-acl.791/",
     "links": [
-      { "label": "Scholar", "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:2osOgNQ5qMEC" },
-      { "label": "ACL Anthology", "url": "https://aclanthology.org/2026.findings-acl.791/" },
-      { "label": "arXiv", "url": "https://arxiv.org/abs/2601.04566" },
-      { "label": "Code", "url": "https://github.com/Yunhao-Feng/BackdoorAgent" }
-    ]
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2026.findings-acl.791/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/Yunhao-Feng/BackdoorAgent"
+      }
+    ],
+    "id": "backdooragent",
+    "highlight_zh": "统一分析智能体后门威胁，研究触发器在规划、记忆与工具调用阶段的激活和传播。",
+    "selected_order": 3
   },
   {
     "title": "FCAT: Federated Causal Adversarial Training",
@@ -69,8 +101,14 @@
     "highlight": "Federated causal adversarial training for robust learning.",
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:d1gkVwhDpl0C",
     "links": [
-      { "label": "Scholar", "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:d1gkVwhDpl0C" },
-      { "label": "Journal", "url": "https://www.sciencedirect.com/science/article/abs/pii/S0950705125014790" }
+      {
+        "label": "Scholar",
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:d1gkVwhDpl0C"
+      },
+      {
+        "label": "Journal",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0950705125014790"
+      }
     ]
   },
   {
@@ -82,8 +120,14 @@
     "highlight": "Scalable safety testing pipeline for LLM agents, from risk discovery to evidence-grounded verification.",
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:YsMSGLbcyi4C",
     "links": [
-      { "label": "Scholar", "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:YsMSGLbcyi4C" },
-      { "label": "arXiv", "url": "https://arxiv.org/abs/2607.01793" }
+      {
+        "label": "Scholar",
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:YsMSGLbcyi4C"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2607.01793"
+      }
     ]
   },
   {
@@ -95,8 +139,14 @@
     "highlight": "Security and privacy analysis of self-evolving LLM agent systems.",
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:W7OEmFMy1HYC",
     "links": [
-      { "label": "Scholar", "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:W7OEmFMy1HYC" },
-      { "label": "arXiv", "url": "https://arxiv.org/abs/2606.23075" }
+      {
+        "label": "Scholar",
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:W7OEmFMy1HYC"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.23075"
+      }
     ]
   },
   {
@@ -108,25 +158,41 @@
     "highlight": "Self-evolving guard-model training from open-world threat signals and realistic agent trajectories.",
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:Tyk-4Ss8FVUC",
     "links": [
-      { "label": "Scholar", "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:Tyk-4Ss8FVUC" },
-      { "label": "arXiv", "url": "https://arxiv.org/abs/2606.01166" },
-      { "label": "Code", "url": "https://github.com/Yunhao-Feng/BraveGuard" }
+      {
+        "label": "Scholar",
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:Tyk-4Ss8FVUC"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.01166"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/Yunhao-Feng/BraveGuard"
+      }
     ]
   },
   {
     "title": "PaperAsk: A Benchmark for Reliability Evaluation of LLMs in Paper Search and Reading",
-    "venue": "WWW 2026",
+    "venue": "The Web Conference (WWW) 2026",
     "year": "2026",
     "citations": 1,
     "authors": "Yutao Wu, Xiao Liu, Yunhao Feng, Jiale Ding, Xingjun Ma",
-    "highlight": "Reliability benchmark for LLM paper search and reading tasks.",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:9yKSN-GCB0IC",
-    "featured": true,
+    "highlight": "Evaluating the reliability of LLM research assistants in citation retrieval, content extraction, paper discovery, and claim verification.",
+    "url": "https://arxiv.org/abs/2510.22242",
     "links": [
-      { "label": "Scholar", "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:9yKSN-GCB0IC" },
-      { "label": "arXiv", "url": "https://arxiv.org/abs/2510.22242" },
-      { "label": "WWW", "url": "https://www2026.thewebconf.org/accepted/research-tracks.html" }
-    ]
+      {
+        "label": "Paper",
+        "url": "https://arxiv.org/abs/2510.22242"
+      },
+      {
+        "label": "Data",
+        "url": "https://github.com/wuyoscar/PaperAsk/tree/main/test_cases"
+      }
+    ],
+    "id": "paperask",
+    "highlight_zh": "围绕引文检索、内容提取、论文发现与论断验证四类任务，评估大模型科研助手的可靠性。",
+    "selected_order": 5
   },
   {
     "title": "When Experience Becomes Instruction: Trajectory Poisoning in Self-Evolving Agent Skill Systems",
@@ -136,8 +202,14 @@
     "highlight": "Trajectory poisoning risks in self-evolving agent skill systems.",
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:ufrVoPGSRksC",
     "links": [
-      { "label": "Scholar", "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:ufrVoPGSRksC" },
-      { "label": "arXiv", "url": "https://arxiv.org/abs/2608.05563" }
+      {
+        "label": "Scholar",
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:ufrVoPGSRksC"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2608.05563"
+      }
     ]
   },
   {
@@ -148,21 +220,32 @@
     "highlight": "Provenance auditing for LLM-agent skill reuse across multiple traces.",
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:_FxGoFyzp5QC",
     "links": [
-      { "label": "Scholar", "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:_FxGoFyzp5QC" },
-      { "label": "arXiv", "url": "https://arxiv.org/abs/2608.05204" }
+      {
+        "label": "Scholar",
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:_FxGoFyzp5QC"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2608.05204"
+      }
     ]
   },
   {
     "title": "JAIL: Adaptive Multi-Turn Jailbreak Attacks Reveal Limitations of LLM Safety Alignment",
-    "venue": "Expert Systems with Applications 2026",
+    "venue": "Expert Systems with Applications · Accepted 2026",
     "year": "2026",
     "authors": "Yunhao Feng, Mingrui Lao, Jun Wang, Yishan Li, Xiaolong Li, Yuxiang Xie, Yanming Guo",
-    "highlight": "Adaptive multi-turn jailbreak attacks for studying limitations of LLM safety alignment.",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:eQOLeE2rZwMC",
+    "highlight": "Adaptive multi-turn jailbreak evaluation that examines the limitations of LLM safety alignment.",
+    "url": "https://doi.org/10.1016/j.eswa.2026.133684",
     "links": [
-      { "label": "Scholar", "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:eQOLeE2rZwMC" },
-      { "label": "Journal", "url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417426025923" }
-    ]
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1016/j.eswa.2026.133684"
+      }
+    ],
+    "id": "jail",
+    "highlight_zh": "通过自适应多轮越狱评测，研究大模型安全对齐在持续交互中的局限性。",
+    "selected_order": 4
   },
   {
     "title": "Constitutional On-Policy Safe Distillation",
@@ -172,8 +255,14 @@
     "highlight": "On-policy safe distillation for aligning capable models with constitutional constraints.",
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:Y0pCki6q_DkC",
     "links": [
-      { "label": "Scholar", "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:Y0pCki6q_DkC" },
-      { "label": "arXiv", "url": "https://arxiv.org/abs/2606.03089" }
+      {
+        "label": "Scholar",
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:Y0pCki6q_DkC"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.03089"
+      }
     ]
   },
   {
@@ -184,8 +273,14 @@
     "highlight": "Position paper arguing that effective controllability is central to AI safety.",
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:zYLM7Y9cAGgC",
     "links": [
-      { "label": "Scholar", "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:zYLM7Y9cAGgC" },
-      { "label": "arXiv", "url": "https://arxiv.org/abs/2605.27117" }
+      {
+        "label": "Scholar",
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:zYLM7Y9cAGgC"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.27117"
+      }
     ]
   },
   {
@@ -196,7 +291,10 @@
     "highlight": "Omni-modal benchmark for fake media and content detection.",
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:WF5omc3nYNoC",
     "links": [
-      { "label": "Scholar", "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:WF5omc3nYNoC" }
+      {
+        "label": "Scholar",
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:WF5omc3nYNoC"
+      }
     ]
   },
   {
@@ -207,7 +305,10 @@
     "highlight": "Trajectory-aware dynamic suffix optimization for LLM jailbreak attacks.",
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:qjMakFHDy7sC",
     "links": [
-      { "label": "Scholar", "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:qjMakFHDy7sC" }
+      {
+        "label": "Scholar",
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=7xD7XIUAAAAJ&citation_for_view=7xD7XIUAAAAJ:qjMakFHDy7sC"
+      }
     ]
   }
 ]
