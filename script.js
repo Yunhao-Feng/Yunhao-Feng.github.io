@@ -35,6 +35,7 @@ const translations = {
   awardQingyun: '腾讯青云计划 (Tencent Qingyun Program)',
   awardKstar: '快手 KStar 计划 (Kuaishou KStar Program)',
   awardHuawei: '2024 年“华为杯”第六届中国研究生人工智能创新大赛，大模型安全赛道<strong>全国冠军</strong>',
+  awardNudt: '国防科技大学国防科技奖学金，2024 年',
   backTop: "返回顶部 ↑"
 };
 const languageButton = document.getElementById("langToggle");
