@@ -36,9 +36,9 @@ Generated articles are between the `PUBLICATIONS:START` / `PUBLICATIONS:END` com
 
 The existing scheduled Scholar workflow refreshes citation metadata and renders the curated selection. It preserves manually curated venues, years, links, and order; newly discovered papers are not automatically selected.
 
-## Content notes (2026-11-02)
+## Content notes (2026-11-03)
 
-- News records the owner-confirmed 2026 acceptances: Findings of ACL × 1, ICML × 2, ACM Multimedia × 1, and NeurIPS × 1. Exact acceptance months were not supplied, so the page shows the year only.
+- News records the owner-confirmed 2026 acceptances: Findings of ACL × 1, ICML × 2, ACM Multimedia × 1, NeurIPS × 1, and WWW × 1. Exact acceptance months were not supplied, so the page shows the year only.
 - The NeurIPS paper is [ShadowFPT](https://arxiv.org/abs/2610.22871). The two ICML papers are SkillTrojan and [FakeWorld 1.0](https://proceedings.mlr.press/v306/gao26g.html). News intentionally omits paper titles.
 - Research experience follows the supplied résumé: Fudan visiting student first, followed by Ant Group, Alibaba Future Living Lab, and JD Explore Academy.
 - Service and the three highlighted awards follow the owner's supplied list. Qingyun and KStar dates were not supplied and are not inferred.

@@ -17,6 +17,7 @@ const translations = {
   newsMM: "✨ 一篇论文被 <strong>ACM Multimedia 2026</strong> 录用！",
   newsICML: "✨ 两篇论文被 <strong>ICML 2026</strong> 录用！",
   newsACL: "✨ 一篇论文被 <strong>Findings of ACL 2026</strong> 录用！",
+  newsWWW: "✨ 一篇论文被 <strong>WWW 2026</strong> 录用！",
   pubTitle: "代表性论文", allPapers: "完整列表",
   experienceTitle: "研究与实习经历", fudanName: "复旦大学", fudanRole: "访问学生",
   fudanDetail: "开展智能体安全与大模型可靠性研究，关注智能体工作流中的后门威胁与评测基准构建。",
